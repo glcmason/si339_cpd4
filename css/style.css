@@ -1,0 +1,305 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #15244a;
+}
+
+/* Header styling */
+header {
+    background: #7cbee7; /* background */
+    color: #15244a; /* White text */
+    text-align: center;
+    padding: 1rem 0; /* Padding for header */
+}
+
+/* img styling */
+img{
+    border-radius: 50%;
+}
+
+/* Navigation styling */
+nav {
+    background: #15244a; /* Dark background for nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: block; /* Stack navigation links vertically */
+    margin-bottom: 10px; /* Space between stacked links */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px;
+}
+
+/* Main content styling */
+main {
+    padding: 10px; /* Add padding around main content */
+}
+
+h2 {
+    margin-top: 20px; /* Space above headings */
+    color: #15244a; /* Heading color */
+    font-size: 1.5rem; 
+}
+
+
+.team-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.team-list li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.team-list a {
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    color: #024c9c; /* Link color */
+    font-size: 18px; /* Font size for links */
+    padding: 10px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    display: block; /* Make the link fill the list item */
+    transition: background-color 0.3s, color 0.3s; /* Smooth background change on hover */
+}
+
+.team-list a:hover {
+    background-color: #b6b6b6; /* Light gray background on hover */
+
+}
+
+/* Athlete Result Table Styling */
+#athlete-result-table {
+    margin-top: 20px; /* Space above the table */
+}
+
+#athlete-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    margin: 0 auto; /* Center the table */
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#athlete-table thead {
+    background-color: #7cbee7;
+    color: #15244a;
+}
+
+#athlete-table th, #athlete-table td {
+    padding: 8px; /* Padding for cells */
+    text-align: left; /* Left align text */
+    border-bottom: 1px solid #ddd; /* Light gray border below cells */
+}
+
+#athlete-table th {
+    font-weight: bold; /* Bold text for headers */
+}
+
+#athlete-table tr:hover {
+    background-color:#b6b6b6 ; /* Light gray background on hover */
+
+}
+
+.result-row {
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#athlete-table td a {
+    font-size: 14px;
+    color: #15244a;
+    text-decoration: none; /* Remove underline from links */
+}
+
+#athlete-table td a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Section for athlete links */
+
+footer a {
+    color: white;
+}
+
+#athlete-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#athlete-links ul li {
+    background: white; /* White background for links */
+    margin: 10px 0; /* Space between links */
+    padding: 15px; /* Padding inside link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#athlete-links ul li a {
+    color: #15244a; /* Dark text for links */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Makes the entire list item clickable */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+  
+  /* Hover effect */
+  ul li a:hover {
+    background-color: #9c9c9c;
+    color: #0056b3;
+  }
+
+/* Footer styling */
+footer {
+    background: #15244a; /* Dark background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center footer content */
+    padding: 15px 0; /* Padding for footer */
+    margin-top: 20px; /* Space above footer */
+    font-size: 0.9rem;
+}
+/* team members link styling */
+#team-members ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+#team-members ul li {
+    background: white; /* White background for links */
+    margin: 10px 0; /* Space between links */
+    padding: 15px; /* Padding inside link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#team-members ul li a {
+    color: #15244a; /* Dark text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        padding: 20px;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Horizontal navigation for tablets */
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px; /* Space between list items */
+    }
+
+    .team-list li {
+        flex: 1 1 45%; /* Two columns on tablet */
+        margin: 10px 0;
+    }
+
+    .team-list a {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    /* Athlete Result Table Styling */
+    #athlete-result-table {
+        margin-top: 30px;
+    }
+
+    #athlete-table {
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+
+    #athlete-table th, #athlete-table td {
+        padding: 12px;
+    }
+
+    #athlete-table td a {
+        font-size: 0.95rem;
+    }
+
+    /* Footer styling */
+    footer {
+        padding: 20px 0;
+        font-size: 1rem;
+    }
+
+    /* Athlete links styling */
+    #athlete-links ul li, #team-members ul li {
+        padding: 20px;
+    }
+
+    #athlete-links ul li a, #team-members ul li a {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .team-list a {
+        transition: none; /* Remove transitions for links */
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #040f40; /* Dark background for dark mode */
+        color: #f9f9f9; /* Light text for dark mode */
+    }
+
+    h1, h2 {
+        color: #fff; /* White color for headings in dark mode */
+    }
+
+    .team-list a {
+        color: #66b3ff; /* Light blue links for dark mode */
+        background-color: #12043a; /* Darker background for links in dark mode */
+    }
+
+    .team-list a:hover {
+        background-color: #555; /* Darker background on hover in dark mode */
+        color: #fff; /* White color on hover in dark mode */
+    }
+
+    footer {
+        color: #ccc; /* Light footer text for dark mode */
+    }
+}
