@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #15244a;
+}
+
+/* Header styling */
+header {
+    background: #7cbee7; /* background */
+    color: #15244a; /* White text */
+    text-align: center;
+    padding: 1.5rem 0; /* Padding for header */
+}
+
+/* img styling */
+img{
+    border-radius: 50%;
+}
+
+/* Navigation styling */
+nav {
+    background: #15244a; /* Dark background for nav */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Align list items horizontally */
+    margin-right: 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px;
+}
+
+/* Main content styling */
+main {
+    padding: 20px; /* Add padding around main content */
+}
+
+h2 {
+    margin-top: 20px; /* Space above headings */
+    color: #15244a; /* Heading color */
+}
+
+/* Athlete Result Table Styling */
+#athlete-result-table {
+    margin-top: 20px; /* Space above the table */
+}
+
+#athlete-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders */
+    margin: 0 auto; /* Center the table */
+    background-color: #fff; /* White background for the table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+
+#athlete-table thead {
+    background-color: #7cbee7;
+    color: #15244a;
+}
+
+#athlete-table th, #athlete-table td {
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Left align text */
+    border-bottom: 1px solid #ddd; /* Light gray border below cells */
+}
+
+#athlete-table th {
+    font-weight: bold; /* Bold text for headers */
+}
+
+#athlete-table tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+.result-row {
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#athlete-table td a {
+    color: #15244a;
+    text-decoration: none; /* Remove underline from links */
+}
+
+#athlete-table td a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Section for athlete links */
+
+footer a {
+    color: white;
+}
+
+#athlete-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#athlete-links ul li {
+    background: white; /* White background for links */
+    margin: 10px 0; /* Space between links */
+    padding: 15px; /* Padding inside link */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#athlete-links ul li a {
+    color: #15244a; /* Dark text for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Footer styling */
+footer {
+    background: #15244a; /* Dark background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center footer content */
+    padding: 15px 0; /* Padding for footer */
+    margin-top: 20px; /* Space above footer */
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin-bottom: 10px; /* Space between stacked links */
+    }
+
+    header {
+        padding: 1rem 0; /* Adjust header padding */
+    }
+
+    main {
+        padding: 10px; /* Adjust main content padding */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller heading size */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Smaller footer text */
+    }
+
+    #athlete-table {
+        font-size: 14px; /* Smaller text size for mobile */
+    }
+
+    #athlete-table th, #athlete-table td {
+        padding: 8px; /* Less padding for smaller screens */
+    }
+}
